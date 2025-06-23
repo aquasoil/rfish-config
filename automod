@@ -1,0 +1,64 @@
+type: submission
+title (includes): ["betta"]
+comment: |
+    Hello /u/{{author}}, it looks like your post is focused on a Betta Fish. For future reference, try r/Bettafish with these types of submissions.
+---
+type: submission
+title (includes): ["Why I love fishing", "I caught this", "I caught a", "fishing with", "memancing", "fishing in", "(amazing|great) catch", "fly fishing", "fishing for", "fishing the", "Show off your catch", "introduce fishing", "fishing at a young age", “fishing”, “man catch”, “man caught”, “I catch”, “I caught”]
+comment: |
+    Hello /u/{{author}}, it appears your post is related to **fishing**, which is against our [subreddit rules](https://www.reddit.com/r/Fish/about/rules/). Because of this your post has been removed. Please use r/fishing for these posts instead. If you believe this is a mistake or require further clarification, please [message the moderators](/message/compose?to=/r/fish&subject=Moderator mistake - fishing).
+action: filter 
+---
+type: submission
+author:
+    account_age: "< 7"
+action: remove
+comment: |
+    Hello /u/{{author}}, Unfortunately, since your account is under 7 days old (1 week) and new account spam makes up a significant portion of all spam, your post was automatically removed. However, you may still contribute by commenting on existing posts in /r/fish! If you believe this is a legitimate submission, please [message the moderators](/message/compose?to=/r/fish&subject=Request for post review - account age) to have them manually review your post, or wait until your reddit account comes of age and try again. Thank you!
+---
+type: submission
+title (includes): ["pond", "my koi", "my big koi", "my white koi"]
+comment: |
+    Hello /u/{{author}}, It appears your post is related to **ponds**, which we do not allow on this subreddit, so the post has been removed. Please use r/ponds and r/FishTank for these posts instead. If you believe this is a mistake, please [message the moderators](/message/compose?to=/r/fish&subject=Moderator mistake - aquariums).
+action: filter
+---
+type: submission
+title (includes): ["unwell", " ill", " tank", "pump", "rehome", "aquarium", "sick", "where to ask this", "pet", "my fish collection", "bubbles growing on tail", "my (male|female)", "gallon", "had (him|her)", "my Betta", "Dropsy", "(what|how) to buy", "lump", "bloat", "pop(-| )eye", "hate me", "scared of me", "floating (butt|tail)", "it(')?s on a (couple|serval|few|number) of (mine|my)", "White spot", "my little spot", "I named my", "I love my", "OmegaGenics", "softgel", "(store|shop)", "what('s|s)? (could|is) (be )?wrong with (him|her)", "lying on (his|her) side", "fin rot", "killed itself", "committed suicide", "Platy bab", "clown loach", "mollies", "Added more plants", "pregnant?", “my fish”, “my platy”, ”my tetra”, “my pleco”, “my catfish”, “my goldfish”, "my waterpup", "he sleeps all the time", "my guppies", "Doofus", "my cory", “is my fish blind”]
+comment: |
+    Hello /u/{{author}}, It appears your post is related to **aquariums** or your fish is ill or unwell. Please use r/FishTank for these posts instead to get better help on this. Your post has been removed. If you believe this is a mistake, please [message the moderators](/message/compose?to=/r/fish&subject=Moderator mistake - aquariums).
+action: filter
+---
+type: text submission
+title (includes): ["help", "advice", " gal", “got a new”, “adopted a new”, “goldfish”, “got this little guy”, “adopted”, "my new", “betta”, "overstocked", "what's wrong with", "biowheel", "raising", "raised"]
+comment: |
+    Hello /u/{{author}}, your post appears to be related to **aquariums**, which we do not allow on this subreddit, so your post will be manually reviewed by a moderator. If this is an aquarium post, please post this in r/FishTank instead. Otherwise, please wait for the called moderator to review the post.
+action: filter
+#Most but not all help posts are in regards to aquariums so they'll need to be checked. If you'd like to be notified of a help post, switch your username with mine.
+---
+    domain: ["www.sciencedaily.com"]
+    action: approve
+---
+~title (regex): '^[\p{L}\p{M}\p{N}\p{P}\p{Sm}\p{Sc}\p{Sk}\p{Z}]+$'
+action: remove
+comment: |
+    Sorry, your [{{kind}}]({{permalink}}) in /r/{{subreddit}} has been automatically removed because you used a non-standard character.
+
+    Standard characters are letters (in any language), accents and other modifiers, numerals, normal punctuation, mathematical and currency symbols, and the space character.
+
+    Please retry your {{kind}} using standard characters only. If you believe this is a mistake, please [message the moderators](/message/compose?to=/r/fish&subject=Request for post review - non-standard characters).
+---
+type: submission
+title (includes): ["fish(-| )market", "hahaha", "bitch", "???", "!!!", "recipe", "dinner", "vs.", "verse", “100% horrifying”, “ko’d“, “fuck”, “ shit”, “ggg”, “fff”, “ OMG”, “ lol”, “crab”, “lobster”, “craw”, “jellyfish”, “starfish”, “ snail ”, “recipe”, "fish finger", "cook", "fish hunting"]
+action: filter
+---
+title (case-sensitive, regex, full-text): "([A-Z0-9]|\\W)+"
+action: remove
+---
+    author:
+        name: [my444xo, jigarmeup, sneakpeaknow, soapiesworld, triggeringsjws247, StephenMBou, James12Johnson, oceankingallblue, PrimitiveTechnologyV]
+    action: remove
+#This command is for accounts your unsure are spammers/trolls. Feel free to add their name here and check there following post history. MasterYourChampLoL makes videos of fish fighting one another. Appyniranjan posts gory fish videos. my444xo sending out angry PMs following post removal.
+#u/thefinalultimation was here
+
+---
+#Automatic comments on all new posts, "moderators_exempt: true" will make moderator posts not have automod comments.
